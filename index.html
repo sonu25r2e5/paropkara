@@ -19,8 +19,8 @@
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/old.png" alt=""></a>
-            <div class="nav-links">
-                <i class="fa fa-window-close"></i>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-window-close" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
@@ -28,7 +28,7 @@
                     <li><a href="#">SERVICE</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
             <h1>Our Paroparkar Sanashtha and Anushanda kendra</h1>
@@ -40,8 +40,24 @@
         </div>
 
 
-
     </section>
+
+    <!-- Javascript script lies here  -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        // function for showMenu 
+        function showMenu() {
+            navLinks.style.right = "0px"
+            navLinks.style.backgroundColor = 'blue'
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+            navLinks.style.backgroundColor = 'black'
+
+        }
+
+    </script>
 </body>
 
 </html>
