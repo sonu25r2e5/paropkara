@@ -251,7 +251,6 @@ h3 {
 
 .layer:hover {
     background-color: rgba(226, 0, 0, 7);
-    opacity: 0.2;
 }
 
 .layer h3 {
