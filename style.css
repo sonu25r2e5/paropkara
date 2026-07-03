@@ -110,7 +110,7 @@ nav .fa {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
 
     nav img {
         width: 50px;
@@ -136,7 +136,7 @@ nav .fa {
         height: 100vh;
         width: 200px;
         top: 0;
-        right: -300px;
+        right: -200px;
         text-align: left;
         z-index: 2;
         transition: 1s;
