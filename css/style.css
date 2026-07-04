@@ -387,22 +387,21 @@ h1 {
 }
 
 .campus {
-    width: 80%;
+    width: 85%;
     text-align: center;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: block;
+    flex-direction: column;
+    gap: 2x;
     justify-content: center;
 }
 
 .campus .row {
-    flex: 0 0 calc(50% - 10px);
+    flex: 0 0 calc(50% - 10%);
     margin-top: 0;
 }
 
 .campus-col {
-    flex-basis: 55%;
     border-radius: 10px;
     justify-content: space-around;
     margin-bottom: 30px;
@@ -412,24 +411,23 @@ h1 {
 }
 
 .campus-col img {
-    width: 100%;
-    display: flex;
+    width: 55%;
 }
 
 .layer {
-    background-color: transparent;
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     transition: 0.5s;
-
+    padding: 2px;
 }
 
 .layer:hover,
 .campus-col.active .layer {
-    background-color: transparent;
+    background-color: red;
+    opacity: 0.2;
 }
 
 .layer h3 {
@@ -455,7 +453,7 @@ h1 {
     display: none;
     background: #fff;
     padding: 16px;
-    text-align: left;
+    text-align: center;
     border-top: 1px solid #eee;
 }
 
