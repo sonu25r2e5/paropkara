@@ -64,6 +64,22 @@
             font-size: 15px;
         }
 
+        .summary-box {
+            background: linear-gradient(135deg, #1f4e79, #3b7fb4);
+            color: white;
+            padding: 16px 18px;
+            border-radius: 12px;
+            margin: 12px 0 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 6px 16px rgba(31, 78, 121, 0.18);
+        }
+
+        .summary-box strong {
+            font-size: 24px;
+        }
+
         .list {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -81,6 +97,23 @@
         .item h3 {
             color: #1f4e79;
             margin-bottom: 6px;
+        }
+
+        .item img {
+            width: 100px !important;
+            height: 100px !important;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #1f4e79;
+            flex-shrink: 0;
+            transition: transform 0.25s ease, width 0.25s ease, height 0.25s ease;
+        }
+
+        .item:hover img {
+            width: 132px !important;
+            height: 132px !important;
+            transform: scale(1.04);
+            box-shadow: 0 8px 18px rgba(31, 78, 121, 0.2);
         }
 
         @media (max-width: 768px) {
@@ -101,6 +134,10 @@
         <div class="card">
             <h1>List of Patients and People We Support</h1>
             <p>Here is a simple list of the people and patients supported by our organization.</p>
+            <div class="summary-box">
+                <span>Total Patients Admitted</span>
+                <strong id="totalCount">0</strong>
+            </div>
             <input type="text" id="searchInput" class="search-box" placeholder="Search by name...">
 
             <div class="list" id="peopleList">
@@ -108,7 +145,7 @@
                     <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
                         <img src="../images/old.png" alt="Profile picture"
                             style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
-                        <h3>Ram Bahadur Shrestha</h3>
+                        <h3>Bhir Bahadur Shrest</h3>
                     </div>
                     <p><strong>Admitted:</strong> 2021</p>
                     <p><strong>Current Stay:</strong> 4 years</p>
@@ -119,7 +156,7 @@
                     <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
                         <img src="../images/old.png" alt="Profile picture"
                             style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
-                        <h3>Mina Devi Thapa</h3>
+                        <h3>Chandra Bahadur Shrest</h3>
                     </div>
                     <p><strong>Admitted:</strong> 2022</p>
                     <p><strong>Current Stay:</strong> 3 years</p>
@@ -130,7 +167,7 @@
                     <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
                         <img src="../images/old.png" alt="Profile picture"
                             style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
-                        <h3>Hari Prasad Karki</h3>
+                        <h3>Chandra Mayabasnet</h3>
                     </div>
                     <p><strong>Admitted:</strong> 2020</p>
                     <p><strong>Current Stay:</strong> 5 years</p>
@@ -141,7 +178,7 @@
                     <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
                         <img src="../images/old.png" alt="Profile picture"
                             style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
-                        <h3>Shanti Maya Rai</h3>
+                        <h3>Chandraman Rai</h3>
                     </div>
                     <p><strong>Admitted:</strong> 2023</p>
                     <p><strong>Current Stay:</strong> 2 years</p>
@@ -152,7 +189,7 @@
                     <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
                         <img src="../images/old.png" alt="Profile picture"
                             style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
-                        <h3>Gopal Bahadur Tamang</h3>
+                        <h3>Dilli Kumari Shrest</h3>
                     </div>
                     <p><strong>Admitted:</strong> 2019</p>
                     <p><strong>Current Stay:</strong> 6 years</p>
@@ -163,7 +200,7 @@
                     <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
                         <img src="../images/old.png" alt="Profile picture"
                             style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
-                        <h3>Sita Kumari Gurung</h3>
+                        <h3>Dilli Prasad Bhandari</h3>
                     </div>
                     <p><strong>Admitted:</strong> 2024</p>
                     <p><strong>Current Stay:</strong> 1 year</p>
@@ -174,7 +211,7 @@
                     <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
                         <img src="../images/old.png" alt="Profile picture"
                             style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
-                        <h3>Bhakta Raj Bhandari</h3>
+                        <h3>Durga Maya Adikari</h3>
                     </div>
                     <p><strong>Admitted:</strong> 2021</p>
                     <p><strong>Current Stay:</strong> 4 years</p>
@@ -185,7 +222,7 @@
                     <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
                         <img src="../images/old.png" alt="Profile picture"
                             style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
-                        <h3>Parbati Devi Adhikari</h3>
+                        <h3>Ganesh Kumari Shrest</h3>
                     </div>
                     <p><strong>Admitted:</strong> 2022</p>
                     <p><strong>Current Stay:</strong> 3 years</p>
@@ -196,7 +233,7 @@
                     <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
                         <img src="../images/old.png" alt="Profile picture"
                             style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
-                        <h3>Ramesh Kumar Yadav</h3>
+                        <h3>Indra Prasad Sitaula</h3>
                     </div>
                     <p><strong>Admitted:</strong> 2020</p>
                     <p><strong>Current Stay:</strong> 5 years</p>
@@ -207,7 +244,7 @@
                     <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
                         <img src="../images/old.png" alt="Profile picture"
                             style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
-                        <h3>Mani Maya Basnet</h3>
+                        <h3>Ishori Devi Karki</h3>
                     </div>
                     <p><strong>Admitted:</strong> 2023</p>
                     <p><strong>Current Stay:</strong> 2 years</p>
@@ -218,7 +255,7 @@
                     <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
                         <img src="../images/old.png" alt="Profile picture"
                             style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
-                        <h3>Prem Bahadur Chhetri</h3>
+                        <h3>Kamala Devi Updhaya</h3>
                     </div>
                     <p><strong>Admitted:</strong> 2018</p>
                     <p><strong>Current Stay:</strong> 7 years</p>
@@ -229,7 +266,7 @@
                     <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
                         <img src="../images/old.png" alt="Profile picture"
                             style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
-                        <h3>Kamala Devi Shrestha</h3>
+                        <h3>Kamaxya Devi Rijal</h3>
                     </div>
                     <p><strong>Admitted:</strong> 2024</p>
                     <p><strong>Current Stay:</strong> 1 year</p>
@@ -240,7 +277,7 @@
                     <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
                         <img src="../images/old.png" alt="Profile picture"
                             style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
-                        <h3>Surya Bahadur Magar</h3>
+                        <h3>Khadga Kumari Shrest</h3>
                     </div>
                     <p><strong>Admitted:</strong> 2022</p>
                     <p><strong>Current Stay:</strong> 3 years</p>
@@ -251,7 +288,7 @@
                     <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
                         <img src="../images/old.png" alt="Profile picture"
                             style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
-                        <h3>Dhan Maya KC</h3>
+                        <h3>Kunta Devi Kheral</h3>
                     </div>
                     <p><strong>Admitted:</strong> 2021</p>
                     <p><strong>Current Stay:</strong> 4 years</p>
@@ -262,7 +299,7 @@
                     <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
                         <img src="../images/old.png" alt="Profile picture"
                             style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
-                        <h3>Basanta Kumar Lama</h3>
+                        <h3>Laxmi Narayan Adhikari</h3>
                     </div>
                     <p><strong>Admitted:</strong> 2020</p>
                     <p><strong>Current Stay:</strong> 5 years</p>
@@ -273,7 +310,7 @@
                     <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
                         <img src="../images/old.png" alt="Profile picture"
                             style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
-                        <h3>Nirmala Devi Poudel</h3>
+                        <h3>Laxuman Agrawal</h3>
                     </div>
                     <p><strong>Admitted:</strong> 2023</p>
                     <p><strong>Current Stay:</strong> 2 years</p>
@@ -284,7 +321,7 @@
                     <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
                         <img src="../images/old.png" alt="Profile picture"
                             style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
-                        <h3>Som Bahadur Darji</h3>
+                        <h3>Maya Khatiwada</h3>
                     </div>
                     <p><strong>Admitted:</strong> 2019</p>
                     <p><strong>Current Stay:</strong> 6 years</p>
@@ -295,12 +332,45 @@
                     <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
                         <img src="../images/old.png" alt="Profile picture"
                             style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
-                        <h3>Tara Devi Rijal</h3>
+                        <h3>Menuka Devi Shrest</h3>
                     </div>
                     <p><strong>Admitted:</strong> 2024</p>
                     <p><strong>Current Stay:</strong> 1 year</p>
                     <p><strong>Care Needed:</strong> Emotional support and daily care</p>
                     <p><strong>Status:</strong> Receiving close support</p>
+                </div>
+                <div class="item">
+                    <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+                        <img src="../images/old.png" alt="Profile picture"
+                            style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
+                        <h3>Nanda Kumari Shrest</h3>
+                    </div>
+                    <p><strong>Admitted:</strong> 2022</p>
+                    <p><strong>Current Stay:</strong> 3 years</p>
+                    <p><strong>Care Needed:</strong> Gentle monitoring and meals</p>
+                    <p><strong>Status:</strong> Doing well with steady care</p>
+                </div>
+                <div class="item">
+                    <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+                        <img src="../images/old.png" alt="Profile picture"
+                            style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
+                        <h3>Siya Raj Sshrest</h3>
+                    </div>
+                    <p><strong>Admitted:</strong> 2023</p>
+                    <p><strong>Current Stay:</strong> 2 years</p>
+                    <p><strong>Care Needed:</strong> Daily companionship and support</p>
+                    <p><strong>Status:</strong> Improving steadily</p>
+                </div>
+                <div class="item">
+                    <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+                        <img src="../images/old.png" alt="Profile picture"
+                            style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #1f4e79;">
+                        <h3>Vadra Kumari Neupane</h3>
+                    </div>
+                    <p><strong>Admitted:</strong> 2024</p>
+                    <p><strong>Current Stay:</strong> 1 year</p>
+                    <p><strong>Care Needed:</strong> Rest, nutrition, and comfort</p>
+                    <p><strong>Status:</strong> Receiving kind care</p>
                 </div>
             </div>
         </div>
@@ -309,14 +379,25 @@
     <script>
         const searchInput = document.getElementById('searchInput');
         const peopleItems = Array.from(document.querySelectorAll('.item'));
+        const totalCount = document.getElementById('totalCount');
+
+        function updateCount() {
+            const visibleCount = peopleItems.filter(item => item.style.display !== 'none').length;
+            totalCount.textContent = visibleCount;
+        }
+
+        updateCount();
 
         searchInput.addEventListener('input', function () {
             const query = this.value.toLowerCase().trim();
 
             peopleItems.forEach(item => {
                 const name = item.textContent.toLowerCase();
-                item.style.display = name.includes(query) ? 'block' : 'none';
+                const isMatch = name.includes(query);
+                item.style.display = isMatch ? 'block' : 'none';
             });
+
+            updateCount();
         });
     </script>
 </body>

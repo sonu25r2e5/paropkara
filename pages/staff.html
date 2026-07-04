@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff | Paropakar Sanstha</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+    <style>
+        body {
+            background: #f7f9fc;
+            color: #2f3e46;
+        }
+
+        .page {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px 60px;
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .topbar a {
+            text-decoration: none;
+            color: #1f4e79;
+            font-weight: bold;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+        }
+
+        .staff-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .staff-card {
+            border: 1px solid #dbe4f0;
+            border-radius: 12px;
+            padding: 16px;
+            background: #f9fbff;
+        }
+
+        .staff-photo {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 12px;
+            border: 3px solid #dbe4f0;
+        }
+
+        .staff-card h3 {
+            color: #1f4e79;
+            margin-bottom: 6px;
+            text-align: center;
+        }
+
+        .staff-card p {
+            margin-bottom: 4px;
+            color: #556;
+        }
+
+        .staff-summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+
+        .staff-summary strong {
+            color: #1f4e79;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: #f4f7fb;
+            border: 1px solid #dbe4f0;
+            border-radius: 999px;
+            padding: 8px 12px;
+            min-width: 260px;
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+            background: transparent;
+            width: 100%;
+            margin-left: 8px;
+            color: #2f3e46;
+        }
+
+        .no-results {
+            display: none;
+            padding: 12px;
+            text-align: center;
+            color: #6b7280;
+        }
+
+        @media (max-width: 768px) {
+            .staff-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="topbar">
+            <h2>Our Staff</h2>
+            <a href="../index.html">← Back to Home</a>
+        </div>
+
+        <div class="card">
+            <h1>Dedicated Team Members</h1>
+            <p>These are the caring staff members who support the daily work at Paropakar Sanstha.</p>
+
+            <div class="staff-summary">
+                <div><strong>Total Staff:</strong> <span id="staff-count">4</span></div>
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="staffSearch" placeholder="Search staff by name">
+                </div>
+            </div>
+
+            <div class="staff-grid">
+                <div class="staff-card" data-name="ram bahadur shrestha" data-joined="2016">
+                    <img class="staff-photo" src="../images/1.jpg" alt="Profile photo of Mr. Ram Bahadur Shrestha">
+                    <h3>Mr. Ram Bahadur Shrestha</h3>
+                    <p><strong>Role:</strong> Manager</p>
+                    <p><strong>Responsibility:</strong> Oversees daily operations and coordination</p>
+                    <p class="years-label" data-joined="2016"></p>
+                </div>
+                <div class="staff-card" data-name="sita devi karki" data-joined="2019">
+                    <img class="staff-photo" src="../images/2.jpg" alt="Profile photo of Mrs. Sita Devi Karki">
+                    <h3>Mrs. Sita Devi Karki</h3>
+                    <p><strong>Role:</strong> Nurse</p>
+                    <p><strong>Responsibility:</strong> Provides basic health support and care</p>
+                    <p class="years-label" data-joined="2019"></p>
+                </div>
+                <div class="staff-card" data-name="hari prasad rai" data-joined="2021">
+                    <img class="staff-photo" src="../images/3.jpg" alt="Profile photo of Mr. Hari Prasad Rai">
+                    <h3>Mr. Hari Prasad Rai</h3>
+                    <p><strong>Role:</strong> Cook</p>
+                    <p><strong>Responsibility:</strong> Prepares nutritious meals for residents</p>
+                    <p class="years-label" data-joined="2021"></p>
+                </div>
+                <div class="staff-card" data-name="kamala thapa" data-joined="2022">
+                    <img class="staff-photo" src="../images/adw.jpg" alt="Profile photo of Mrs. Kamala Thapa">
+                    <h3>Mrs. Kamala Thapa</h3>
+                    <p><strong>Role:</strong> Caregiver</p>
+                    <p><strong>Responsibility:</strong> Assists with daily needs and emotional support</p>
+                    <p class="years-label" data-joined="2022"></p>
+                </div>
+                <div class="staff-card" data-name="kamala thapa" data-joined="2022">
+                    <img class="staff-photo" src="../images/adw.jpg" alt="Profile photo of Mrs. Kamala Thapa">
+                    <h3>Mrs. Kamala Thapa</h3>
+                    <p><strong>Role:</strong> Caregiver</p>
+                    <p><strong>Responsibility:</strong> Assists with daily needs and emotional support</p>
+                    <p class="years-label" data-joined="2022"></p>
+                </div>
+                <div class="staff-card" data-name="kamala thapa" data-joined="2022">
+                    <img class="staff-photo" src="../images/adw.jpg" alt="Profile photo of Mrs. Kamala Thapa">
+                    <h3>Mrs. Kamala Thapa</h3>
+                    <p><strong>Role:</strong> Caregiver</p>
+                    <p><strong>Responsibility:</strong> Assists with daily needs and emotional support</p>
+                    <p class="years-label" data-joined="2022"></p>
+                </div>
+                <div class="staff-card" data-name="kamala thapa" data-joined="2022">
+                    <img class="staff-photo" src="../images/adw.jpg" alt="Profile photo of Mrs. Kamala Thapa">
+                    <h3>Mrs. Kamala Thapa</h3>
+                    <p><strong>Role:</strong> Caregiver</p>
+                    <p><strong>Responsibility:</strong> Assists with daily needs and emotional support</p>
+                    <p class="years-label" data-joined="2022"></p>
+                </div>
+            </div>
+
+            <div id="no-results" class="no-results">No staff found matching your search.</div>
+        </div>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('staffSearch');
+        const staffCards = Array.from(document.querySelectorAll('.staff-card'));
+        const noResults = document.getElementById('no-results');
+        const countLabel = document.getElementById('staff-count');
+
+        document.querySelectorAll('.years-label').forEach((label) => {
+            const joined = parseInt(label.dataset.joined, 10);
+            const years = new Date().getFullYear() - joined;
+            label.innerHTML = `<strong>Joined:</strong> ${joined} • ${years} year${years === 1 ? '' : 's'} with us`;
+        });
+
+        function updateStaffList() {
+            const query = searchInput.value.trim().toLowerCase();
+            let visibleCount = 0;
+
+            staffCards.forEach((card) => {
+                const name = card.dataset.name.toLowerCase();
+                const matches = name.includes(query);
+                card.style.display = matches ? 'block' : 'none';
+                if (matches) visibleCount += 1;
+            });
+
+            noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+            countLabel.textContent = visibleCount;
+        }
+
+        searchInput.addEventListener('input', updateStaffList);
+        updateStaffList();
+    </script>
+</body>
+
+</html>
