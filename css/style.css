@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-
+    color: black;
     font-family: "Yuyu", sans-serif;
     font-weight: 40;
     font-style: normal;
@@ -13,6 +13,7 @@
     position: relative;
     overflow: hidden;
     background: #0f172a;
+
 }
 
 nav {
@@ -43,7 +44,7 @@ nav img {
 }
 
 .nav-links ul li a {
-    color: #Fff;
+    color: black;
     text-decoration: none;
     font-size: 20px;
 }
@@ -116,8 +117,9 @@ nav img {
 
 .text-box p {
     margin: 10px 0 40px;
-    font-size: 30px;
-    color: #fff;
+    padding: 50px;
+    font-size: 50px;
+    color: black;
 }
 
 
