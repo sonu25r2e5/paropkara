@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Paropakar Sanstha</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            color: #333;
+            min-height: 100vh;
+        }
+
+        .page {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px 60px;
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .topbar a {
+            text-decoration: none;
+            color: #b22222;
+            font-weight: bold;
+        }
+
+        .contact-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .info h1 {
+            font-size: 32px;
+            margin-bottom: 12px;
+            color: #b22222;
+        }
+
+        .info p {
+            margin-bottom: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .details div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #444;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            width: fit-content;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #b22222;
+            color: #fff;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background: #8f1919;
+        }
+
+        @media (max-width: 768px) {
+            .contact-card {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="topbar">
+            <h2>Contact Us</h2>
+            <a href="../index.html">← Back to Home</a>
+        </div>
+
+        <div class="contact-card">
+            <div class="info">
+                <h1>Paropakar Sanstha</h1>
+                <p>We are here to support senior citizens and families with care, guidance, and assistance. Reach out to
+                    us for any questions or support requests.</p>
+
+                <div class="details">
+                    <div><i class="fa-solid fa-location-dot"></i> <span>Biratnagar, Nepal</span></div>
+                    <div><i class="fa-solid fa-phone"></i> <span>+977-9800000000</span></div>
+                    <div><i class="fa-solid fa-envelope"></i> <span>info@paropakar.org</span></div>
+                </div>
+            </div>
+
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -4,172 +4,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Paropakar Sanstha</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
 
-    <title>Services</title>
-    <link rel="stylesheet" href="/css/style2.css">
+        body {
+            background: linear-gradient(135deg, #f8fbff, #eef4ff);
+            color: #2f3e46;
+            line-height: 1.7;
+        }
+
+        .page {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px 60px;
+        }
+
+        .header-box {
+            border: 2px solid #1f4e79;
+            border-radius: 16px;
+            padding: 24px;
+            background: #fff;
+            margin-bottom: 24px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+        }
+
+        .header-box h1 {
+            color: #1f4e79;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .header-box p {
+            color: #556;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .service-card {
+            border: 2px solid #1f4e79;
+            border-radius: 14px;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+        }
+
+        .service-card h3 {
+            color: #1f4e79;
+            margin-bottom: 8px;
+        }
+
+        .service-card ul {
+            padding-left: 18px;
+            color: #556;
+        }
+
+        .highlight {
+            margin-top: 20px;
+            border-left: 5px solid #1f4e79;
+            padding-left: 12px;
+            color: #2f3e46;
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!-- <section class="services">
-        <div class="col-1">
+    <div class="page">
+        <div class="header-box">
+            <a href="../index.html"
+                style="display: inline-block; margin-bottom: 10px; color: #1f4e79; text-decoration: none; font-weight: bold;">←
+                Back to Main Page</a>
             <h1>Services</h1>
-            <p>
-                Paropakar Sanstha and Anusandhan Kendra provides comprehensive care and support services for senior
-                citizens to promote their health, safety, comfort, and overall well-being. The organization offers
-                residential care along with medical, nursing, and rehabilitative services delivered by trained
-                professionals. It also focuses on improving the quality of life of older adults by meeting their
-                physical, emotional, and social needs in a supportive environment.
-            </p>
-            <ul>
-                <li> 24-hour residential care and supervision</li>
-                <li>
-                    Medical and nursing care
-                </li>
-                <li>
-                    24-hour residential care and supervision
-                </li>
-                <li>
-                    Assistance with activities of daily living (bathing, dressing, grooming, and mobility)
-                </li>
-                <li>
-                    Oxygen therapy and other supportive medical services
-                </li>
-                <li>
-                    Counseling and emotional support
-                </li>
-
-                <li>
-                    Temporary, permanent, and day-care services for senior citizens
-                </li>
-            </ul>
+            <p>Paropakar Sanstha provides thoughtful and dependable services for senior citizens and vulnerable people
+                with compassion and care.</p>
         </div>
 
-        <div class="row">
-            <div class="col-12">
-                <img src="/photos/eating.jpg" alt="">
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Medical Support</h3>
+                <ul>
+                    <li>Regular health monitoring</li>
+                    <li>Medical assistance when needed</li>
+                    <li>Support for ongoing wellness</li>
+                </ul>
             </div>
 
-            <div class="col-12">
-                <img src="/photos/medicalcare.jpg" alt="">
+            <div class="service-card">
+                <h3>Daily Care</h3>
+                <ul>
+                    <li>24-hour supervision</li>
+                    <li>Help with daily activities</li>
+                    <li>Safe and respectful accommodation</li>
+                </ul>
             </div>
-            <div class="col-12">
-                <img src="/photos/sewa.jpg" alt="">
+
+            <div class="service-card">
+                <h3>Nutrition & Meals</h3>
+                <ul>
+                    <li>Healthy and balanced meals</li>
+                    <li>Special dietary support</li>
+                    <li>Clean and hygienic food service</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>Emotional Support</h3>
+                <ul>
+                    <li>Counseling and guidance</li>
+                    <li>Companionship and care</li>
+                    <li>Peaceful and supportive environment</li>
+                </ul>
             </div>
         </div>
 
-    </section> -->
-
-    <div class="container">
-        <!-- <div class="card">
-            <h2>Box 1</h2>
-            <p>Content goes here.</p>
-        </div>
-        <div class="card">
-            <h2>Box 2</h2>
-            <p>Content goes here.</p>
-        </div>
-        <div class="card">
-            <h2>Box 3</h2>
-            <p>Content goes heradae.</p>
-        </div>
-        <div class="card">
-            <h2>Box 3</h2>
-            <p>Content goes here.</p>
-        </div>
-        <div class="card">
-            <h2>Box 3</h2>
-            <p>Content goes here.</p>
-        </div> -->
-        <div class="card">
-            <h1>Services</h1>
-            <p>
-                Paropakar Sanstha and Anusandhan Kendra provides comprehensive care and support services for senior
-                citizens to promote their health, safety, comfort, and overall well-being. The organization offers
-                residential care along with medical, nursing, and rehabilitative services delivered by trained
-                professionals. It also focuses on improving the quality of life of older adults by meeting their
-                physical, emotional, and social needs in a supportive environment.
-            </p>
-            <ul>
-                <li> 24-hour residential care and supervision</li>
-                <li>
-                    Medical and nursing care
-                </li>
-                <li>
-                    24-hour residential care and supervision
-                </li>
-                <li>
-                    Assistance with activities of daily living (bathing, dressing, grooming, and mobility)
-                </li>
-                <li>
-                    Oxygen therapy and other supportive medical services
-                </li>
-                <li>
-                    Counseling and emotional support
-                </li>
-
-                <li>
-                    Temporary, permanent, and day-care services for senior citizens
-                </li>
-            </ul>
+        <div class="highlight">
+            <p>We are here to provide services with dignity, compassion, and dedication.</p>
         </div>
 
-        <div class="card-2">
-            <p>Content goes here.</p>
-
-            <!-- row1 -->
-
-            <div class="row">
-                <div class="card-member">
-                    <img src="/photos/eating.jpg" style="border-radius: 4rem;">
-                </div>
-
-                <div class="card-member">
-                    <img src="/photos/medicalcare.jpg" style="border-radius: 4rem;">
-                </div>
-
-                <div class="card-member">
-                    <img src="/photos/sewa.jpg" style="border-radius: 4rem;">
-                </div>
-
+        <div class="services-grid" style="margin-top: 20px;">
+            <div class="service-card">
+                <img src="../photos/eating.jpg" alt="Meal service"
+                    style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;">
             </div>
-
-            <div class="row">
-                <div class="card-member">
-                    <img src="/photos/eating.jpg" style="border-radius: 4rem;">
-                </div>
-
-                <div class="card-member">
-                    <img src="/photos/medicalcare.jpg" style="border-radius: 4rem;">
-                </div>
-
-                <div class="card-member">
-                    <img src="/photos/sewa.jpg" style="border-radius: 4rem;">
-                </div>
+            <div class="service-card">
+                <img src="../photos/medicalcare.jpg" alt="Medical care"
+                    style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;">
             </div>
-
-            <div class="row">
-                <div class="card-member">
-                    <img src="/photos/eating.jpg" style="border-radius: 4rem;">
-                </div>
-
-                <div class="card-member">
-                    <img src="/photos/medicalcare.jpg" style="border-radius: 4rem;">
-                </div>
-
-                <div class="card-member">
-                    <img src="/photos/sewa.jpg" style="border-radius: 4rem;">
-                </div>
+            <div class="service-card">
+                <img src="../photos/medicalcare.jpg" alt="Medical care"
+                    style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;">
             </div>
-
-
-
+            <div class="service-card">
+                <img src="../photos/medicalcare.jpg" alt="Medical care"
+                    style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;">
+            </div>
+            <div class="service-card">
+                <img src="../photos/medicalcare.jpg" alt="Medical care"
+                    style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;">
+            </div>
+            <div class="service-card">
+                <img src="../photos/medicalcare.jpg" alt="Medical care"
+                    style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;">
+            </div>
         </div>
 
-
-
+        <div class="header-box"
+            style="margin-top: 24px; text-align: center; background: linear-gradient(135deg, #fff8e1, #ffe082); border-color: #f4b400;">
+            <h2 style="color: #8a4b00; margin-bottom: 8px;">Donate to Support Our Cause</h2>
+            <p style="color: #6b4f1d; margin-bottom: 12px;">Your kindness can help us care for more elderly and
+                vulnerable people.</p>
+            <div
+                style="display: inline-block; padding: 16px; border: 2px dashed #f4b400; border-radius: 12px; background: #fff;">
+                <div
+                    style="width: 140px; height: 140px; background: linear-gradient(45deg, #111, #444); border-radius: 10px; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white; font-size: 14px; font-weight: bold;">
+                    QR Code</div>
+            </div>
+            <p style="margin-top: 10px; color: #6b4f1d;">Scan to donate</p>
+        </div>
     </div>
+</body>
 
-
+</html>
+</div>
 </body>
 
 </html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Paropakar Sanstha</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f7f7f7;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .page {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px 60px;
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .topbar a {
+            text-decoration: none;
+            color: #b22222;
+            font-weight: bold;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h1 {
+            color: #b22222;
+            margin-bottom: 12px;
+            font-size: 32px;
+        }
+
+        .card p {
+            margin-bottom: 14px;
+            color: #555;
+        }
+
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .highlights div {
+            background: #fff3f3;
+            padding: 16px;
+            border-radius: 10px;
+        }
+
+        .highlights h3 {
+            margin-bottom: 6px;
+            color: #b22222;
+        }
+
+        @media (max-width: 768px) {
+            .highlights {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="topbar">
+            <h2>About Us</h2>
+            <a href="../index.html">← Back to Home</a>
+        </div>
+
+        <div class="card">
+            <h1>Paropakar Sanstha</h1>
+            <p>Paropakar Sanstha is a caring organization dedicated to supporting elderly and needy people with dignity,
+                comfort, and compassion. Our mission is to create a safe and respectful environment where every
+                individual feels valued and protected.</p>
+            <p>We focus on providing essential services such as shelter, food, medical care, emotional support, and
+                daily assistance for those in need. Our team works with dedication to improve the quality of life of the
+                people we serve.</p>
+
+            <div class="highlights">
+                <div>
+                    <h3>Our Mission</h3>
+                    <p>To provide compassionate care and support for the elderly and vulnerable members of society.</p>
+                </div>
+                <div>
+                    <h3>Our Vision</h3>
+                    <p>To build a community where every senior citizen lives with dignity, safety, and care.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
