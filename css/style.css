@@ -12,7 +12,9 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    background: #0f172a;
+    background: linear-gradient(rgba(4, 9, 30, 0.55), rgba(4, 9, 30, 0.55)), url("../images/1.jpg");
+    background-position: center;
+    background-size: cover;
 
 }
 
@@ -44,7 +46,7 @@ nav img {
 }
 
 .nav-links ul li a {
-    color: black;
+    color: #fff;
     text-decoration: none;
     font-size: 20px;
 }
@@ -63,41 +65,13 @@ nav img {
     width: 100%;
 }
 
-.header::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(rgba(4, 9, 30, 0.65), rgba(4, 9, 30, 0.75));
-    z-index: 0;
-}
 
-.header .carousel-slide {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-}
 
-.header .carousel-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: none;
-    animation: fade 1.2s ease-in-out;
-}
 
-.header .carousel-slide img.active {
-    display: block;
-}
 
-@keyframes fade {
-    from {
-        opacity: 0.5;
-    }
 
-    to {
-        opacity: 1;
-    }
-}
+
+
 
 .text-box {
     width: 90%;
@@ -112,6 +86,7 @@ nav img {
 
 .text-box h1 {
     font-size: 60px;
+    color: #fff;
 
 }
 
@@ -120,6 +95,24 @@ nav img {
     padding: 50px;
     font-size: 50px;
     color: black;
+}
+
+#moreDetails {
+    width: min(380px, 88%);
+    margin: 10px auto 18px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+#moreDetails p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 
