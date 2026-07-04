@@ -55,6 +55,15 @@
             color: #556;
         }
 
+        .search-box {
+            width: 100%;
+            padding: 12px 14px;
+            margin: 12px 0 16px;
+            border: 1px solid #dbe4f0;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
         .list {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -92,8 +101,9 @@
         <div class="card">
             <h1>List of Patients and People We Support</h1>
             <p>Here is a simple list of the people and patients supported by our organization.</p>
+            <input type="text" id="searchInput" class="search-box" placeholder="Search by name...">
 
-            <div class="list">
+            <div class="list" id="peopleList">
                 <div class="item">
                     <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
                         <img src="../images/old.png" alt="Profile picture"
@@ -295,6 +305,20 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const peopleItems = Array.from(document.querySelectorAll('.item'));
+
+        searchInput.addEventListener('input', function () {
+            const query = this.value.toLowerCase().trim();
+
+            peopleItems.forEach(item => {
+                const name = item.textContent.toLowerCase();
+                item.style.display = name.includes(query) ? 'block' : 'none';
+            });
+        });
+    </script>
 </body>
 
 </html>
