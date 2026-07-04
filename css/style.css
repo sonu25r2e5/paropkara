@@ -365,7 +365,7 @@ h3 {
 }
 
 .team-member {
-    width: 80%;
+    width: 60%;
     text-align: center;
     margin: auto;
     padding: 20px;
@@ -387,9 +387,9 @@ h3 {
 }
 
 .campus-col {
-    flex-basis: 100%;
-    border-radius: 10px;
-    justify-content: space-between;
+    flex-basis: 55%;
+    border-radius: 50px;
+    justify-content: space-around;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
@@ -398,7 +398,7 @@ h3 {
 
 .campus-col img {
     width: 100%;
-    display: block;
+    display: flex;
 }
 
 .layer {
@@ -414,7 +414,7 @@ h3 {
 
 .layer:hover,
 .campus-col.active .layer {
-    background-color: transparent
+    background-color: transparent;
 }
 
 .layer h3 {
