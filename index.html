@@ -28,13 +28,23 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
+        <div class="carousel-slide">
+            <img src="photos/food1.jpg" class="active" alt="Carousel image 1">
+            <img src="photos/medicalcare.jpg" alt="Carousel image 2">
+            <img src="photos/eating.jpg" alt="Carousel image 3">
+        </div>
         <div class="text-box">
             <h1>Our Paroparkar Sanashtha and Anushanda kendra</h1>
-            <p>Our serivce has been serving and taking care of old and homeless <br>old people for longer period of time
-                and
-                has done much more than any other organization . thank you a.
+
             </p>
-            <a href="" class="hero-btn">Want to Know More</a>
+            <div id="moreDetails"
+                style="display:none; margin-top:12px; background:rgba(255,255,255,0.15); padding:12px; border-radius:10px; max-width:700px; margin-left:auto; margin-right:auto; text-align:left;">
+                <p>We provide care, shelter, medical support, and compassionate services for senior citizens and
+                    vulnerable people. Our mission is to create a safe and respectful home for those who need support
+                    and dignity.</p>
+            </div>
+            <a href="#" class="hero-btn" onclick="toggleDetails(event)">Want to Know More</a>
+
         </div>
 
     </section>
@@ -144,6 +154,26 @@
         function hideMenu() {
             navLinks.style.right = "-200px"
 
+        }
+
+        function toggleDetails(event) {
+            event.preventDefault();
+            var details = document.getElementById("moreDetails");
+            details.style.display = (details.style.display === "block") ? "none" : "block";
+        }
+
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide img');
+
+        function showNextSlide() {
+            slides.forEach((slide, index) => {
+                slide.classList.toggle('active', index === slideIndex);
+            });
+            slideIndex = (slideIndex + 1) % slides.length;
+        }
+
+        if (slides.length > 0) {
+            setInterval(showNextSlide, 4000);
         }
     </script>
 
