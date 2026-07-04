@@ -1,0 +1,185 @@
+/* * {
+    font-family: Yuyu, sans-serif;
+    font-weight: 20;
+    font-style: normal;
+}
+
+@media (min-width: 333px) {
+
+    .col-1 h1 {
+        text-align: center;
+        font-size: 1px;
+    }
+
+    .col-1 p {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .col-12 {
+        display: flex;
+    }
+
+    .col-12 img {
+        flex-direction: column;
+    }
+
+
+
+}
+
+.col-1 {
+    width: 100%;
+    min-height: 100vh;
+    background: #44e;
+    color: #fff;
+}
+
+.col-1 h1 {
+    text-align: center;
+    font-size: 52px;
+}
+
+.col-1 p {
+    font-size: 40px;
+    padding: 12px;
+}
+
+ul li {
+    margin-right: 90px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #050000;
+    font-size: 26px;
+}
+
+.row {
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    background-color: #44e;
+    justify-content: space-evenly;
+}
+
+
+.col-12 {
+    border-radius: 90px;
+}
+
+.col-12 img {
+    padding: 55px 55px;
+    height: 500px;
+    border-radius: 5rem;
+} */
+
+
+/* Base styles / Mobile layout (Mobile-First Approach) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* Stacked vertically on mobile */
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card h1 {
+    font-size: 80px;
+
+}
+
+.card p {
+    font-size: 40px;
+    text-align: justify;
+}
+
+.card-2 {
+    background-color: white;
+    padding: 1px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card-member img {
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-member {
+    padding: 1px;
+    margin: 12px;
+    border-radius: 12px;
+
+}
+
+ul li {
+    margin-right: 90px;
+    text-align: left;
+    padding: 8px 16px;
+    font-size: 26px;
+}
+
+
+/* 2. Media Query for Tablets (Screens 600px wide and up) */
+@media (min-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .container {
+        flex-direction: column;
+        /* Side-by-side elements on larger screens */
+    }
+
+    .card {
+        flex: 1;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* 3. Media Query for Desktops (Screens 1000px wide and up) */
+@media (min-width: 1000px) {
+    body {
+        background-color: lightgreen;
+    }
+
+    h1 {
+        font-size: 3rem;
+        /* Larger headings for desktop screens */
+    }
+}
