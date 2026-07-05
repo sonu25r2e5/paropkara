@@ -117,8 +117,35 @@
         }
 
         @media (max-width: 768px) {
+            .page {
+                padding: 24px 14px 44px;
+            }
+
+            .topbar {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .card {
+                padding: 20px 14px;
+                border-radius: 10px;
+            }
+
+            .summary-box {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 4px;
+            }
+
             .list {
                 grid-template-columns: 1fr;
+            }
+
+            .item:hover img {
+                width: 100px !important;
+                height: 100px !important;
+                transform: none;
             }
         }
     </style>
@@ -128,7 +155,7 @@
     <div class="page">
         <div class="topbar">
             <h2>Patients and People</h2>
-            <a href="../index.html">← Back to Home</a>
+            <a href="../index.html">&larr; Back to Home</a>
         </div>
 
         <div class="card">

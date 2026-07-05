@@ -114,6 +114,26 @@
         }
 
         @media (max-width: 768px) {
+            .page {
+                padding: 24px 14px 44px;
+            }
+
+            .topbar {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .card {
+                padding: 20px 14px;
+                border-radius: 10px;
+            }
+
+            .search-box {
+                min-width: 0;
+                width: 100%;
+            }
+
             .staff-grid {
                 grid-template-columns: 1fr;
             }
@@ -125,7 +145,7 @@
     <div class="page">
         <div class="topbar">
             <h2>Our Staff</h2>
-            <a href="../index.html">← Back to Home</a>
+            <a href="../index.html">&larr; Back to Home</a>
         </div>
 
         <div class="card">
@@ -163,28 +183,28 @@
                     <p class="years-label" data-joined="2021"></p>
                 </div>
                 <div class="staff-card" data-name="kamala thapa" data-joined="2022">
-                    <img class="staff-photo" src="../images/adw.jpg" alt="Profile photo of Mrs. Kamala Thapa">
+                    <img class="staff-photo" src="../photos/sewa.jpg" alt="Profile photo of Mrs. Kamala Thapa">
                     <h3>Mrs. Kamala Thapa</h3>
                     <p><strong>Role:</strong> Caregiver</p>
                     <p><strong>Responsibility:</strong> Assists with daily needs and emotional support</p>
                     <p class="years-label" data-joined="2022"></p>
                 </div>
                 <div class="staff-card" data-name="kamala thapa" data-joined="2022">
-                    <img class="staff-photo" src="../images/adw.jpg" alt="Profile photo of Mrs. Kamala Thapa">
+                    <img class="staff-photo" src="../photos/sewa.jpg" alt="Profile photo of Mrs. Kamala Thapa">
                     <h3>Mrs. Kamala Thapa</h3>
                     <p><strong>Role:</strong> Caregiver</p>
                     <p><strong>Responsibility:</strong> Assists with daily needs and emotional support</p>
                     <p class="years-label" data-joined="2022"></p>
                 </div>
                 <div class="staff-card" data-name="kamala thapa" data-joined="2022">
-                    <img class="staff-photo" src="../images/adw.jpg" alt="Profile photo of Mrs. Kamala Thapa">
+                    <img class="staff-photo" src="../photos/sewa.jpg" alt="Profile photo of Mrs. Kamala Thapa">
                     <h3>Mrs. Kamala Thapa</h3>
                     <p><strong>Role:</strong> Caregiver</p>
                     <p><strong>Responsibility:</strong> Assists with daily needs and emotional support</p>
                     <p class="years-label" data-joined="2022"></p>
                 </div>
                 <div class="staff-card" data-name="kamala thapa" data-joined="2022">
-                    <img class="staff-photo" src="../images/adw.jpg" alt="Profile photo of Mrs. Kamala Thapa">
+                    <img class="staff-photo" src="../photos/sewa.jpg" alt="Profile photo of Mrs. Kamala Thapa">
                     <h3>Mrs. Kamala Thapa</h3>
                     <p><strong>Role:</strong> Caregiver</p>
                     <p><strong>Responsibility:</strong> Assists with daily needs and emotional support</p>
@@ -205,7 +225,7 @@
         document.querySelectorAll('.years-label').forEach((label) => {
             const joined = parseInt(label.dataset.joined, 10);
             const years = new Date().getFullYear() - joined;
-            label.innerHTML = `<strong>Joined:</strong> ${joined} • ${years} year${years === 1 ? '' : 's'} with us`;
+            label.innerHTML = `<strong>Joined:</strong> ${joined} &bull; ${years} year${years === 1 ? '' : 's'} with us`;
         });
 
         function updateStaffList() {
